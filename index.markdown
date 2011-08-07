@@ -63,7 +63,7 @@ FAQ
 > * **PHPWind** 再 管理后台 ->  站点设置 -> 第三方统计代码 贴入这段代码即可 
 
 1. 获取源代码
-> 源代码
+> 源代码 可以从[Google Code](http://code.google.com/p/itemstatlite/source/checkout)上获得
 
 寻求帮助
 -------
