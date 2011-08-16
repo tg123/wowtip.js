@@ -16,8 +16,8 @@ class WowServer {
 	}
 
 	public function character($realm, $name){
-		$realm = urlencode($realm);
-		$name = urlencode($name);
+		$realm = rawurlencode($realm);
+		$name = rawurlencode($name);
 		return "http://{$this->server}/api/wow/character/$realm/$name/?fields=items,professions,talents,titles,guild";
 	}
 }

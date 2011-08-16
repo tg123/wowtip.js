@@ -5,9 +5,9 @@
 <title>WowTip.js</title>
 <script src="http://wowtip.sinaapp.com/wowtip.js" charset="utf8"></script>
 <link href="http://kevinburke.bitbucket.org/markdowncss/markdown.css" rel="stylesheet"></link>
+<link rel="shortcut icon" href="http://www.battlenet.com.cn/wow/static/local-common/images/favicons/wow.ico" type="image/x-icon"/>
 </head>
 <body>
-
 <style>
 #fuckie { background-color: #888888; color: orange; padding: 10px;}
 #fuckie a{color:orange }
@@ -16,9 +16,7 @@
 <?php
 include 'index.markdown.php';
 ?>
-
 <a target="_blank" href="http://sae.sina.com.cn"><img title="Powered by Sina App Engine" src="http://static.sae.sina.com.cn/image/poweredby/120X33_transparent.gif"></a>
-
 <!--[if IE]>
 <script type="text/javascript" 
 src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>

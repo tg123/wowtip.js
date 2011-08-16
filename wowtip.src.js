@@ -357,8 +357,9 @@ window.wowtip = (function(){
 		{regx : /\[item (.+?)\]/gi ,func: item },
 		{regx : /\[item=(\d+?)\](.+?)\[\/item\]/gi ,func : item_withid },
 		{regx : /\[armory=(.+?)\](.+?)\[\/armory\]/gi ,func : character},
-		{regx : /\[armory (.+?) (.+?)\]/gi ,func : character},
-		{regx : /\[(cn|tw|eu|us|kr|de|fr|es|pt|it|pl|ru)armory (.+?) (.+?)\]/gi ,func : character_with_lang}
+		{regx : /\[armory (.+) (.+?)\]/gi ,func : character},
+		{regx : /\[(cn|tw|eu|us|kr|de|fr|es|pt|it|pl|ru)armory (.+) (.+?)\]/gi ,func : character_with_lang},
+		{regx : /\[(cn|tw|eu|us|kr|de|fr|es|pt|it|pl|ru)armory=(.+?)\](.+?)\[\/\1armory\]/gi ,func : character_with_lang}
 	];
 
 	// {{{ Tooltip and pos

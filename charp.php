@@ -55,7 +55,7 @@ if($name && $realm){
 			$r = array();
 			$r['uid'] = $uid;
 			$r['error'] = 1;
-			memcache_set($mc, $uid, serialize($r) , false, 60);
+			memcache_set($mc, $uid, serialize($r) , false, 300);
 		}
 
 	}

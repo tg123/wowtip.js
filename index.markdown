@@ -37,17 +37,20 @@ WowTip.js
 
 > **代码**
 >	
->      [armory=范达尔鹿盔]真好吃[/armory]
->      [armory 范达尔鹿盔 人月神话]
+>      [armory=范达尔鹿盔]人月神话[/armory]
+>      或写成 [armory 范达尔鹿盔 人月神话]
+>       
 >      [euarmory Vashj Putty]
->      目前支持: 
+>      或写成 [euarmory Vashj]Putty[/euarmory]
+> 
+>      eu 可以替换成下边字符 支持不同的服务器 目前支持: 
 >      cn 国服 简体中文 tw 台服 繁体中文 
 >      kr 韩服 朝鲜语 
 >      us 北美英语 mx 北美西班牙语 pt 北美葡萄牙语
->      eu 欧服英语 es 欧服西班牙语 de 欧服德语 fr 欧服法语 it 欧服意大利语 pl 欧服波兰语 ru 欧服俄语
+>      eu 欧服英语 es 欧服西班牙语 de 欧服德语 fr 欧服法语
+>      it 欧服意大利语 pl 欧服波兰语 ru 欧服俄语
 > 
 > **效果**  
-> [armory=范达尔鹿盔]真好吃[/armory]  
 > [armory 范达尔鹿盔 人月神话]  
 > [euarmory Vashj Putty]  
 > 
@@ -75,6 +78,13 @@ FAQ
 支持 WowTip.js
 -------------
 * [购买作者在淘宝出售的魔兽世界点卡](http://item.taobao.com/item.htm?id=8925044258)
+
+使用WowTip.js的网站
+------------------
+> 你可以联系我添加或者删除你的网站
+
+* [CWDG 论坛](http://bbs.cwowaddon.com)
+* [中国游戏者论坛](http://www.cngamer.net)
 
 授权
 ----
