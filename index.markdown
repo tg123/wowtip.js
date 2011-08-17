@@ -70,6 +70,7 @@ FAQ
 
 寻求帮助
 -------
+* 讨论组：[CWDG提供的论坛](http://wowtip.g.cwowaddon.com)
 * 邮件： <farmer1992@gmail.com>
 * 加入QQ群：76067737 
 * [在新浪微博上关注我](http://weibo.com/tg123)
@@ -85,6 +86,7 @@ FAQ
 
 * [CWDG 论坛](http://bbs.cwowaddon.com)
 * [中国游戏者论坛](http://www.cngamer.net)
+* [星光黎明工会](http://www.xglm.net/)
 
 授权
 ----
