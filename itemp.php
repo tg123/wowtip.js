@@ -1,6 +1,6 @@
 <?php
-header("content-Type: text/html; charset=utf-8");
 error_reporting(0);
+
 
 $q = $_GET['q'];
 $tip = $_GET['tip'];
@@ -10,6 +10,16 @@ $uid = "{$q}_{$lang}_{$data}";
 
 
 if($q){
+	$magic = 'v1';
+	$etag = md5($uid . $tip . $magic . date('m'));
+	if(isset($_SERVER['HTTP_IF_NONE_MATCH']) && trim($_SERVER['HTTP_IF_NONE_MATCH']) == $etag) { 
+		header("HTTP/1.1 304 Not Modified"); 
+		exit; 
+	}
+
+	header("content-Type: text/html; charset=utf-8");
+	header("Etag: $etag");
+
 	$support_query = array(
 		'cn','tw','eu','us'
 	);

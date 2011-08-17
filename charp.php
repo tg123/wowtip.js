@@ -1,5 +1,4 @@
 <?php
-header("content-Type: text/html; charset=utf-8");
 error_reporting(0);
 
 $realm = $_GET['realm'];
@@ -8,6 +7,14 @@ $lang = $_GET['lang'];
 
 if($name && $realm){
 	$uid = "{$realm}_{$name}_{$lang}";
+
+	$magic = 'v1';
+	$etag = md5($uid . $magic . date('d'));
+	if(isset($_SERVER['HTTP_IF_NONE_MATCH']) && trim($_SERVER['HTTP_IF_NONE_MATCH']) == $etag) { 
+		header("HTTP/1.1 304 Not Modified"); 
+		exit; 
+	}
+	header("content-Type: text/html; charset=utf-8");
 
 	$mc = memcache_init();
 
@@ -51,11 +58,12 @@ if($name && $realm){
 			$r['uid'] = $uid;
 			$r['error'] = 0;
 			memcache_set($mc, $uid, serialize($r) , false, 43200);
+			header("Etag: $etag");
 		}else{
 			$r = array();
 			$r['uid'] = $uid;
 			$r['error'] = 1;
-			memcache_set($mc, $uid, serialize($r) , false, 300);
+			memcache_set($mc, $uid, serialize($r) , false, 360);
 		}
 
 	}
